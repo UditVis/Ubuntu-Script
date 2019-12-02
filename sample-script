@@ -1,0 +1,31 @@
+#!/bin/sh
+### BEGIN INIT INFO
+# Provides:          Startup Functionalities
+# Required-Start:    $local_fs $remote_fs $network $syslog $named
+# Required-Stop:     $local_fs $remote_fs $network $syslog $named
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# X-Interactive:     true
+# Short-Description: Startup script
+# Description:       Executes commands on startup
+### END INIT INFO
+
+# Created by: XXXXXXX
+# Purpose: Template for startup script /etc/init.d
+
+# Check the path of apps and set enviorment variables as follows in the .bashrc profile
+# export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
+
+case $1 in
+'start')
+#startup commands here
+;;
+'stop')
+#stop commands here
+;;
+'restart')
+#restart stuff here
+;;
+exit 0
+esac
+
